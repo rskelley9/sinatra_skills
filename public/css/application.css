@@ -73,3 +73,52 @@ form.quirks {
   margin-right: 20px;
   width: 200px;
 }
+
+/*====*/
+
+/*.buttons {
+  float:left;
+  width: 200%;
+}*/
+
+.user {
+  float: left;
+  width: 100%;
+  overflow: hidden;
+  border-top: 1px dotted black;
+}
+
+.name {
+  font-weight: bold;
+  width: 25%;
+  float: left;
+  text-align: left;
+}
+
+.skill-name {
+  font-weight: bold;
+  width: 25%%;
+  float: left;
+  text-align: left;
+}
+
+.skill-context {
+  font-weight: bold;
+  width: %20;
+  float: left;
+  text-align: left;
+}
+
+.years_experience {
+  font-weight:bold;
+  width: 25%%;
+  float: left;
+  text-align: left;
+}
+
+.formal_education {
+  font-weight: bold;
+  width: 25%%;
+  float: left;
+  text-align: left;
+}

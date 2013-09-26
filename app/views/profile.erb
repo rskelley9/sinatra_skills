@@ -1,0 +1,29 @@
+<h1>Welcome <%= @user.email %></h1>
+
+<% @user.skills.any? %>
+
+<div class="skill-name">Skill</div>
+
+<div class="skill-context">Context</div>
+
+<% @user.skills.each do |skill| %>
+<div class="user">
+
+	<div class="skill-name">
+		<p><%= skill.name %></p>
+	</div>
+
+	<div class="skill-context">
+		<p><%= skill.context %></p>
+	</div>
+
+	<% end %>
+</div>
+
+
+
+<div class="Buttons">
+<p><a href='/'>Home</a></p>
+
+<p><a href='/update/profile/<%= @user.id %>'>Update Profile</a></p>
+</div>

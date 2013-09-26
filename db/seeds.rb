@@ -13,9 +13,19 @@ computer_skills.each do |skill|
 end
 
 # create a few creative skills
+
 design_skills = %w(Photoshop Illustrator Responsive-Design)
 design_skills.each do |skill|
   Skill.create :name => skill, :context => 'creative'
 end
 
 # TODO: create associations between users and skills
+
+user = (1..5).to_a
+skill = (1..10).to_a
+years_experience = (1..20).to_a
+formal_education = [true, false]
+
+20.times do
+	Proficiency.create ({:user_id => user.sample, :skill_id => skill.sample, :years_experience => years_experience.sample, :formal_education => formal_education.sample})
+end

@@ -38,6 +38,17 @@ end
 
 #----------- USERS -----------
 
+get '/profile/:id' do
+  @user = User.find(params[:id])
+erb :profile
+end
+
+get '/update/profile/:id' do
+
+ erb :select_skills 
+end
+
+
 get '/users/new' do
   # render sign-up page
   @user = User.new
